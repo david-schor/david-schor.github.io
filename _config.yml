@@ -1,0 +1,9 @@
+#
+# Config File
+#
+
+# General Settings
+baseurl: "https://david-schor.github.io/"
+
+# Name of your Blog
+name: "Blog"

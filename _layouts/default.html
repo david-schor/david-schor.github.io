@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{ site.name }}</title>
+	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}style.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/themes/prism.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.js"></script>
+</head>
+
+<body>
+	<div id="menu">
+		<ul>
+			<li><a href="{{ site.baseurl }}about.html">About</a></li>
+			<li><a href="{{ site.baseurl }}projects.html">Projects</a></li>
+			<li><a href="{{ site.baseurl }}">Blog</a></li>
+			<li style="float:left"><a href="about.html">David Schor</a></li>
+		</ul>
+	</div>
+
+	<div id="header">
+		
+		{{ content }}
+
+	</div>
+</body>
+</html>

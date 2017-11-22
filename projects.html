@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+	<div class="wrapper">
+		<h1 id="title">Projects</h1>
+		<hr width="75%">
+		<p>Here are my Projects</p>
+	</div>
+	<svg class="decor" height="100%" preserveAspectRatio="none" version="1.1" viewBox="0 0 100 100" width="100%" xmlns="http://www.w3.org/2000/svg">
+  		<path d="M0 0 L100 100 L0 100" stroke-width="0"></path>
+	</svg>
+</div>
+
+	<div id="content">
+		<div class="wrapper">
+			<p>There aren't any Projects.</p>
+		</div>
+		<div id="container">
+			{% for project in site.projects %}
+				<div class="box">
+					<a href="{{ site.baseurl }}{{ post.url }}">
+						<img src="{{ post.image }}" alt="image" />
+						<div class="centered">{{ post.title }}</div>
+					</a>
+				</div>
+			{% endfor %}		
+		</div>
